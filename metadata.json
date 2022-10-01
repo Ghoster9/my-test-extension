@@ -1,0 +1,19 @@
+{
+  "icon": "docker.svg",
+  "vm": {
+    "composefile": "docker-compose.yaml",
+    "exposes": {
+      "socket": "extension-my-test-extension.sock"
+    }
+  },
+  "ui": {
+    "dashboard-tab": {
+      "title": "My-Test-Extension",
+      "src": "index.html",
+      "root": "ui",
+      "backend": {
+        "socket": "extension-my-test-extension.sock"
+      }
+    }
+  }
+}
